@@ -4,10 +4,12 @@ import MyContext from "../../Context";
 import Interval from "./Interval";
 import Navigation from "./Navigation";
 import NonStop from "./NonStop";
+import { Go } from "./ButtonControl";
 
 export default () => {
   return (
     <div className="settings">
+      <Go />
       <div className="card">
         <MyContext.Consumer>
           {props => {

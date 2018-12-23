@@ -1,12 +1,13 @@
-.non-stop {
+.interval {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding-top: 10%;
 
   > div {
     width: 100%;
@@ -18,17 +19,17 @@
     font: {
       family: "Roboto";
       weight: 900;
-      size: 5vh;
+      size: 3vh;
     }
   }
 
   .btnContainer {
     display: flex;
     justify-content: space-between;
-    margin: 20% 0%;
+    margin: 10% 0%;
     padding: 0 5%;
     font: {
-      size: 5vh;
+      size: 3vh;
       family: "Roboto";
       weight: 600;
     }

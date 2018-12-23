@@ -21,7 +21,9 @@ export default ({ title, minValue, unit, boolean }) => (
             unit={unit}
             minValue={minValue}
           />
-          <div>{displayTime(props.timer[title], boolean)}</div>
+          <div className="displayTimer">
+            {displayTime(props.timer[title], boolean)}
+          </div>
           <AddButton addUnit={props.addUnit} category={title} unit={unit} />
         </div>
       </div>

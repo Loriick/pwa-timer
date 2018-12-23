@@ -1,4 +1,5 @@
 import React from "react";
+import sportTime from "../../img/icon.png";
 
 export const AddButton = ({ addUnit, unit, category }) => (
   <div className="setBtn" onClick={addUnit(category, unit)}>
@@ -11,3 +12,12 @@ export const MinusButton = ({ minusUnit, unit, category, minValue }) => (
     -
   </div>
 );
+
+export const Go = () => {
+  return (
+    <div className="goTimer">
+      <img src={sportTime} alt="chrono picto" />
+      <p>GO</p>
+    </div>
+  );
+};
