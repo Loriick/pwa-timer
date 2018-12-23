@@ -1,0 +1,46 @@
+.navigation {
+  height: 50%;
+  width: 80%;
+  background: rgba(black, 0.6);
+  grid-row: 3/-1;
+  justify-self: center;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 7%;
+  font: {
+    family: "Roboto";
+    weight: 900;
+  }
+
+  ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  li {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      border-top-left-radius: 7%;
+      border-bottom-left-radius: 7%;
+    }
+    &:last-child {
+      border-top-right-radius: 7%;
+      border-bottom-right-radius: 7%;
+    }
+  }
+
+  .active {
+    background: $redColor;
+  }
+}

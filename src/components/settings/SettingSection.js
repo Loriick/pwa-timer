@@ -14,14 +14,16 @@ export default ({ title, minValue, unit, boolean }) => (
     {props => (
       <div>
         <h3>{title}</h3>
-        <MinusButton
-          minusUnit={props.minusUnit}
-          category={title}
-          unit={unit}
-          minValue={minValue}
-        />
-        <div>{displayTime(props.timer[title], boolean)}</div>
-        <AddButton addUnit={props.addUnit} category={title} unit={unit} />
+        <div className="btnContainer">
+          <MinusButton
+            minusUnit={props.minusUnit}
+            category={title}
+            unit={unit}
+            minValue={minValue}
+          />
+          <div>{displayTime(props.timer[title], boolean)}</div>
+          <AddButton addUnit={props.addUnit} category={title} unit={unit} />
+        </div>
       </div>
     )}
   </MyContext.Consumer>

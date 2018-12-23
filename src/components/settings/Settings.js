@@ -7,12 +7,14 @@ import NonStop from "./NonStop";
 
 export default () => {
   return (
-    <div className="card">
-      <MyContext.Consumer>
-        {props => {
-          return props.isSettingInterval ? <Interval /> : <NonStop />;
-        }}
-      </MyContext.Consumer>
+    <div className="settings">
+      <div className="card">
+        <MyContext.Consumer>
+          {props => {
+            return props.isSettingInterval ? <Interval /> : <NonStop />;
+          }}
+        </MyContext.Consumer>
+      </div>
       <Navigation />
     </div>
   );

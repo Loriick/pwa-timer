@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default () => {
   return (
-    <div>
+    <div className="home">
       <h1>Hiit timer</h1>
-      <p>Are you ready for a great workout session ?</p>
-      <Link to="/settings">
-        <div>Let's go</div>
-      </Link>
+      <p>Are you ready for a great workout ?</p>
+      <div>
+        <Link to="/settings">Let's go</Link>
+      </div>
     </div>
   );
 };

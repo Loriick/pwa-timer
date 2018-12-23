@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "HIIT TIMER",
+  "name": "Timer for High Intensity Interval Traning",
   "icons": [
     {
       "src": "favicon.ico",

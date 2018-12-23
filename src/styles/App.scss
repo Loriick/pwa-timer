@@ -1,0 +1,20 @@
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto:300,400,500,700,900");
+
+$redColor: #d0021b;
+
+@import "./reset";
+@import "./home";
+@import "./settings";
+
+body {
+  background: linear-gradient(
+      to right bottom,
+      rgba(#303030, 0.7),
+      rgba(#390b0b, 0.9)
+    ),
+    url(../img/PHOTO-2018-12-21-22-44-00.jpg) no-repeat center center / cover;
+
+  height: 100vh;
+  color: white;
+}
