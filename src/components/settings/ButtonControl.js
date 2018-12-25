@@ -1,5 +1,6 @@
 import React from "react";
 import sportTime from "../../img/icon.png";
+import { Link } from "react-router-dom";
 
 export const AddButton = ({ addUnit, unit, category }) => (
   <div className="setBtn" onClick={addUnit(category, unit)}>
@@ -13,11 +14,11 @@ export const MinusButton = ({ minusUnit, unit, category, minValue }) => (
   </div>
 );
 
-export const Go = () => {
+export const Go = ({ path }) => {
   return (
-    <div className="goTimer">
+    <Link to={`/${path}`} className="goTimer">
       <img src={sportTime} alt="chrono picto" />
       <p>GO</p>
-    </div>
+    </Link>
   );
 };

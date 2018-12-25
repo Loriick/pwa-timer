@@ -9,12 +9,10 @@ import { Go } from "./ButtonControl";
 export default () => {
   return (
     <div className="settings">
-      <Go />
+      <Go path="timer" />
       <div className="card">
         <MyContext.Consumer>
-          {props => {
-            return props.isSettingInterval ? <Interval /> : <NonStop />;
-          }}
+          {props => (props.isSettingInterval ? <Interval /> : <NonStop />)}
         </MyContext.Consumer>
       </div>
       <Navigation />

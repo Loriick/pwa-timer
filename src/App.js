@@ -13,7 +13,8 @@ class App extends Component {
       toggleSetting: this.toggleSetting,
       timer: { workout: 0, rest: 0, sets: 1, cycles: 1 },
       addUnit: this.addUnit,
-      minusUnit: this.minusUnit
+      minusUnit: this.minusUnit,
+      setTimer: this.timerFunc
     };
   }
 
@@ -30,9 +31,8 @@ class App extends Component {
     this.setState({
       timer
     });
-    console.log("add");
   };
-  //timer[category] = this.state.timer[category]
+
   minusUnit = (category, unit, minValue) => () => {
     const timer = { ...this.state.timer };
     timer[category] = timer[category] -= unit;
@@ -43,6 +43,15 @@ class App extends Component {
     console.log(timer[category], "min-value:", minValue);
   };
 
+  countdown;
+
+  setTimer = (second, bool) => {
+    this.setState({
+      timer: {
+        workout: this.secondsLeft - 1
+      }
+    });
+  };
   render() {
     return (
       <div className="App">
