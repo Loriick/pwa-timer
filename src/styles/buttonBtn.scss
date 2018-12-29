@@ -1,0 +1,23 @@
+.pauseBtnContainer {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+
+  .pauseBtn {
+    height: 100%;
+    clip-path: circle(25% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: {
+      size: 5vh;
+      weight: 600;
+    }
+  }
+}
+
+.isPaused {
+  background-color: $redColor;
+}
+.isPlayed {
+  background-color: $greenColor;
+}

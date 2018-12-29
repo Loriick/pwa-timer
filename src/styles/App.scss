@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Roboto:300,400,500,700,900");
 
 $redColor: #d0021b;
+$greenColor: #0aa313;
+$blueColor: #111faa;
+$blackColor: rgba(black, 0.6);
 
 @import "./reset";
 @import "./home";
 @import "./settings";
-
+@import "./timerDisplay";
 body {
   background: linear-gradient(
       to right bottom,

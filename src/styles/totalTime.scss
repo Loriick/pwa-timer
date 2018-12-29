@@ -1,0 +1,18 @@
+.totalTime {
+  grid-row: 2/3;
+  text-align: center;
+  margin-top: 5%;
+  > p {
+    font: {
+      size: 8vh;
+      weight: 600;
+    }
+    margin-bottom: 5%;
+  }
+  > span {
+    font: {
+      size: 6vh;
+      weight: 100;
+    }
+  }
+}
