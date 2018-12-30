@@ -1,14 +1,14 @@
 {
-  "main.css": "/pwa-timer/static/css/main.e180646d.chunk.css",
-  "main.js": "/pwa-timer/static/js/main.1f391db9.chunk.js",
-  "main.js.map": "/pwa-timer/static/js/main.1f391db9.chunk.js.map",
+  "main.css": "/pwa-timer/static/css/main.02c2bd8c.chunk.css",
+  "main.js": "/pwa-timer/static/js/main.2bfea089.chunk.js",
+  "main.js.map": "/pwa-timer/static/js/main.2bfea089.chunk.js.map",
   "static/js/1.0c74e2a2.chunk.js": "/pwa-timer/static/js/1.0c74e2a2.chunk.js",
   "static/js/1.0c74e2a2.chunk.js.map": "/pwa-timer/static/js/1.0c74e2a2.chunk.js.map",
   "runtime~main.js": "/pwa-timer/static/js/runtime~main.0662180f.js",
   "runtime~main.js.map": "/pwa-timer/static/js/runtime~main.0662180f.js.map",
   "static/media/App.scss": "/pwa-timer/static/media/PHOTO-2018-12-21-22-44-00.692378c5.jpg",
-  "static/css/main.e180646d.chunk.css.map": "/pwa-timer/static/css/main.e180646d.chunk.css.map",
+  "static/css/main.02c2bd8c.chunk.css.map": "/pwa-timer/static/css/main.02c2bd8c.chunk.css.map",
   "index.html": "/pwa-timer/index.html",
-  "precache-manifest.52f669ffa812593fa5f2a5a288861916.js": "/pwa-timer/precache-manifest.52f669ffa812593fa5f2a5a288861916.js",
+  "precache-manifest.a71495340ee0417c3273b5b3f4e4ba73.js": "/pwa-timer/precache-manifest.a71495340ee0417c3273b5b3f4e4ba73.js",
   "service-worker.js": "/pwa-timer/service-worker.js"
 }
