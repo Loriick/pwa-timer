@@ -8,14 +8,16 @@ import { Go } from "./ButtonControl";
 
 export default () => {
   return (
-    <div className="settings">
-      <Go path="timer" />
-      <div className="card">
-        <MyContext.Consumer>
-          {props => (props.isSettingInterval ? <Interval /> : <NonStop />)}
-        </MyContext.Consumer>
-      </div>
-      <Navigation />
-    </div>
+    <MyContext.Consumer>
+      {props => (
+        <div className="settings">
+          <Go path="timer" workout={props.timer.workout} />
+          <div className="card">
+            {props.isSettingInterval ? <Interval /> : <NonStop />}
+          </div>
+          <Navigation />
+        </div>
+      )}
+    </MyContext.Consumer>
   );
 };

@@ -14,11 +14,13 @@ export const MinusButton = ({ minusUnit, unit, category, minValue }) => (
   </div>
 );
 
-export const Go = ({ path }) => {
+export const Go = ({ path, workout }) => {
   return (
-    <Link to={`/${path}`} className="goTimer">
-      <img src={sportTime} alt="chrono picto" />
-      <p>GO</p>
-    </Link>
+    workout > 0 && (
+      <Link to={`/${path}`} className="goTimer">
+        <img src={sportTime} alt="chrono picto" />
+        <p>GO</p>
+      </Link>
+    )
   );
 };

@@ -17,7 +17,7 @@ body {
       rgba(#390b0b, 0.9)
     ),
     url(../img/PHOTO-2018-12-21-22-44-00.jpg) no-repeat center center / cover;
-
+  overflow: hidden;
   height: 100vh;
   color: white;
 }
